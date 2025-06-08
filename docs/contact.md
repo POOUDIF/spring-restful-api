@@ -12,10 +12,10 @@ Request Body :
 
 ```json
 {
-  "firstName" : "Daffa",
-  "lastName" : "Saputra",
-  "email" : "daffa@example.com",
-  "phone" : "08987654321"
+  "firstName": "Daffa",
+  "lastName": "Saputra",
+  "email": "daffa@example.com",
+  "phone": "08987654321"
 }
 ```
 
@@ -24,11 +24,11 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "firstName" : "Daffa",
-    "lastName" : "Saputra",
-    "email" : "daffa@example.com",
-    "phone" : "08987654321"
+    "id": "random-string",
+    "firstName": "Daffa",
+    "lastName": "Saputra",
+    "email": "daffa@example.com",
+    "phone": "08987654321"
   }
 }
 ```
@@ -37,7 +37,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Email format invalid, phone format invalid, ..."
+  "errors": "Email format invalid, phone format invalid, ..."
 }
 ```
 
@@ -53,10 +53,10 @@ Request Body :
 
 ```json
 {
-  "firstName" : "Daffa",
-  "lastName" : "Saputra",
-  "email" : "daffa@example.com",
-  "phone" : "08987654321"
+  "firstName": "Daffa",
+  "lastName": "Saputra",
+  "email": "daffa@example.com",
+  "phone": "08987654321"
 }
 ```
 
@@ -65,11 +65,11 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "firstName" : "Daffa",
-    "lastName" : "Saputra",
-    "email" : "daffa@example.com",
-    "phone" : "08987654321"
+    "id": "random-string",
+    "firstName": "Daffa",
+    "lastName": "Saputra",
+    "email": "daffa@example.com",
+    "phone": "08987654321"
   }
 }
 ```
@@ -78,7 +78,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Email format invalid, phone format invalid, ..."
+  "errors": "Email format invalid, phone format invalid, ..."
 }
 ```
 
@@ -95,11 +95,11 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "firstName" : "Daffa",
-    "lastName" : "Saputra",
-    "email" : "daffa@example.com",
-    "phone" : "08987654321"
+    "id": "random-string",
+    "firstName": "Daffa",
+    "lastName": "Saputra",
+    "email": "daffa@example.com",
+    "phone": "08987654321"
   }
 }
 ```
@@ -108,7 +108,7 @@ Response Body (Failed, 404) :
 
 ```json
 {
-  "errors" : "Contact is not found"
+  "errors": "Contact is not found"
 }
 ```
 
@@ -118,12 +118,12 @@ Endpoint : GET /api.contacts/
 
 Query Param :
 
-- name : String, contact first name or last name, using like query, optional
-- phone : String, contact phone, using like query, optional
-- email : String, contact email, using like query, optional
+- name : String, contact first name or last name, using like query, optional.
+- phone : String, contact phone, using like query, optional.
+- email : String, contact email, using like query, optional.
 - page : Integer, start from 0
 - size : Integer, default 10
-Request Header:
+  Request Header:
 
 - X-API-TOKEN : Token (Mandatory)
 
@@ -145,12 +145,15 @@ Response Body (Success) :
   }
 }
 ```
+
 Response Body (Failed) :
+
 ```json
 {
-  "errors" : "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
+
 ## Remove Contact
 
 Endpoint : DELETE /api/contacts/{idContacts}
@@ -163,7 +166,7 @@ Response Body (Success) :
 
 ```json
 {
-  "data" : "Ok"
+  "data": "Ok"
 }
 ```
 
@@ -171,6 +174,6 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Contact is not found"
+  "errors": "Contact is not found"
 }
 ```
