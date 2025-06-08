@@ -12,11 +12,11 @@ Request Body :
 
 ```json
 {
-  "street" : "Jalan apa",
-  "city" : "Kota",
-  "province" : "Provinsi",
-  "country" : "Negara",
-  "postalCode" : "12345"
+  "street": "Jalan",
+  "city": "Kota",
+  "province": "Provinsi",
+  "country": "Negara",
+  "postalCode": "12345"
 }
 ```
 
@@ -25,22 +25,24 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "street" : "Jalan apa",
-    "city" : "Kota",
-    "province" : "Provinsi",
-    "country" : "Negara",
-    "postalCode" : "12345"
+    "id": "random-string",
+    "street": "Jalan",
+    "city": "Kota",
+    "province": "Provinsi",
+    "country": "Negara",
+    "postalCode": "12345"
   }
 }
 ```
+
 Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Address is not found" 
+  "errors": "Address is not found"
 }
 ```
+
 ## Update Address
 
 Endpoint : PUT /api/contacts/{idContact}/addresses/{idAddress}
@@ -53,11 +55,11 @@ Request Body :
 
 ```json
 {
-  "street" : "Jalan apa",
-  "city" : "Kota",
-  "province" : "Provinsi",
-  "country" : "Negara",
-  "postalCode" : "12345"
+  "street": "Jalan apa",
+  "city": "Kota",
+  "province": "Provinsi",
+  "country": "Negara",
+  "postalCode": "12345"
 }
 ```
 
@@ -66,24 +68,26 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "street" : "Jalan apa",
-    "city" : "Kota",
-    "province" : "Provinsi",
-    "country" : "Negara",
-    "postalCode" : "12345"
+    "id": "random-string",
+    "street": "Jalan apa",
+    "city": "Kota",
+    "province": "Provinsi",
+    "country": "Negara",
+    "postalCode": "12345"
   }
 }
 ```
+
 Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Address is not found" 
+  "errors": "Address is not found"
 }
 ```
 
 ## Get Address
+
 Endpoint : GET /api/contacts/{idContact}/addresses/{idAddress}
 
 Request Header :
@@ -95,20 +99,21 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "street" : "Jalan apa",
-    "city" : "Kota",
-    "province" : "Provinsi",
-    "country" : "Negara",
-    "postalCode" : "12345"
+    "id": "random-string",
+    "street": "Jalan apa",
+    "city": "Kota",
+    "province": "Provinsi",
+    "country": "Negara",
+    "postalCode": "12345"
   }
 }
 ```
+
 Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Addresses is not found" 
+  "errors": "Addresses is not found"
 }
 ```
 
@@ -127,11 +132,12 @@ Response Body (Success) :
   "data": "Ok"
 }
 ```
+
 Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Address is not found" 
+  "errors": "Address is not found"
 }
 ```
 
@@ -148,19 +154,20 @@ Response Body (Success) :
 ```json
 {
   "data": {
-    "id" : "random-string",
-    "street" : "Jalan apa",
-    "city" : "Kota",
-    "province" : "Provinsi",
-    "country" : "Negara",
-    "postalCode" : "12345"
+    "id": "random-string",
+    "street": "Jalan apa",
+    "city": "Kota",
+    "province": "Provinsi",
+    "country": "Negara",
+    "postalCode": "12345"
   }
 }
 ```
+
 Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Addresses is not found" 
+  "errors": "Addresses is not found"
 }
 ```
