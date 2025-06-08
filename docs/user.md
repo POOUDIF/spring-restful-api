@@ -8,9 +8,9 @@ Request Body :
 
 ```json
 {
-  "username" : "daffa",
-  "pssword" : "secret",
-  "name" : "Daffa Saputra"
+  "username": "daffa",
+  "pssword": "secret",
+  "name": "Daffa Saputra"
 }
 ```
 
@@ -18,7 +18,7 @@ Response Body (Success) :
 
 ```json
 {
-  "data" : "OK"
+  "data": "OK"
 }
 ```
 
@@ -26,10 +26,9 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Username must not blank !!!"
+  "errors": "Username must not blank !!!"
 }
 ```
-
 
 ## Login User
 
@@ -39,8 +38,8 @@ Request Body :
 
 ```json
 {
-  "username" : "daffa",
-  "pssword" : "secret"
+  "username": "daffa",
+  "pssword": "secret"
 }
 ```
 
@@ -48,9 +47,9 @@ Response Body (Success) :
 
 ```json
 {
-  "data" : {
-    "token" : "TOKEN",
-    "expiresAt" : 234234234234 
+  "data": {
+    "token": "TOKEN",
+    "expiresAt": 234234234234
   }
 }
 ```
@@ -59,10 +58,12 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "username or password wrong"
+  "errors": "username or password wrong"
 }
 ```
+
 ## Get User
+
 Endpoint : GET /api/users/current
 
 Request Header:
@@ -73,9 +74,9 @@ Response Body (Success) :
 
 ```json
 {
-  "data" : {
-    "username" : "daffa",
-    "nama" : "Daffa Saputra"
+  "data": {
+    "username": "daffa",
+    "nama": "Daffa Saputra"
   }
 }
 ```
@@ -84,11 +85,12 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
 
 ## Update User
+
 Endpoint : PATHC /api/users/current
 
 Request Header:
@@ -99,18 +101,18 @@ Request Body :
 
 ```json
 {
-  "name" : "Daffa Saputra",
-  "password" : "new password"
+  "name": "Daffa Saputra",
+  "password": "new password"
 }
-
 ```
+
 Response Body (Success) :
 
 ```json
 {
-  "data" : {
-    "username" : "daffa",
-    "nama" : "Daffa Saputra"
+  "data": {
+    "username": "daffa",
+    "nama": "Daffa Saputra"
   }
 }
 ```
@@ -119,16 +121,15 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
-
 
 ## Logout User
 
 Endpoint : DELETE /api/auth/logout
 
-Request Header:
+Request Header :
 
 - X-API-TOKEN : Token (Mandatory)
 
@@ -136,6 +137,6 @@ Response Body (Success) :
 
 ```json
 {
-  "data" : "Ok"
+  "data": "Ok"
 }
 ```
